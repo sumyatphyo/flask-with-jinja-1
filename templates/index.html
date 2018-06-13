@@ -1,0 +1,16 @@
+
+<html>
+	<head><title>Flask with Jinja</title></head>
+	<body>
+		{% set name = 'Thura Aung' %}
+		{% set git_name = 'thuraaung-ppt' %}
+
+		<img src="{{ url_for('static',filename='profile.jpg')}}">
+		<ul>		
+			<li>{{ name }}</li>
+			<li><a href="http://github.com/{{ git_name }}">GitHub</a></li>
+			<li><a href="http://ThuraAung.herokuapp.com/">Heroku</a></li>
+		</ul>
+
+	</body>
+</html>
